@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        .main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+        .main{
+            background-color:aqua;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto; 
+            border: 2px solid black;
+            border-radius: 100px;
+        }
+        .main2{
+            background-color:blue;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto; 
+            border: 2px solid black;
+            border-radius: 100px;
+        }
+        .main3{
+            background-color:aquamarine;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto; 
+            border: 2px solid black;
+            border-radius: 100px;
+        }
+        .main4{
+            background-color: lightgrey;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto; 
+            border: 2px solid black;
+            border-radius: 100px;
+        }
+        .main1{
+            background-color:lightskyblue;
+            height: 200px;
+            width: 200px;
+            margin: 0 auto; 
+            border: 2px solid black;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+    <div class="main"></div>
+    <div class="main1"></div>
+    <div class="main2"></div>
+    <div class="main3"></div>
+    <div class="main4"></div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+<script>
+    $(document).ready(function(){
+        $(".main").click(function(){
+            $("body").css("background-color" , "aqua")
+            $("body").css("border" , "1px solid black")
+
+        });
+        $(".main1").click(function(){
+            $("body").css("background-color" , "lightskyblue")
+            $("body").css("border" , "1px solid black")
+        });
+        $(".main2").click(function(){
+            $("body").css("background-color" , "blue")
+            $("body").css("border" , "1px solid black")
+        });
+        $(".main3").click(function(){
+            $("body").css("background-color" , "aquamarine")
+            $("body").css("border" , "1px solid black")
+        });
+        $(".main4").click(function(){
+            $("body").css("background-color" , "lightgrey")
+            $("body").css("border" , "1px solid black")
+        })
+    })
+</script>
+</html>

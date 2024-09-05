@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        .main-1{
+            padding: 50px;
+            background-color: aqua;
+            text-align: center;
+        }
+        .main-2{
+            background-color: blue;
+            padding: 150px;
+            display: none;
+            text-align: center;
+            color: white;
+        }
+
+
+        .btn-1{
+            padding: 10px 10px 10px 10px;
+            background-color: aqua;
+            border: none;
+            border-radius: 100px;
+            text-align: center;
+            margin: 0 auto; 
+            display: block;
+        }
+
+        .btn-1:hover {
+    background: blue;
+    color: white;
+    padding:12px ;
+}
+        .btn-2{
+            padding: 10px 10px 10px 10px;
+            background-color: aqua;
+            border: none;
+            border-radius: 100px;
+            text-align: center;
+            margin: 0 auto;
+            display: block; 
+        }
+
+        
+        .btn-2:hover {
+    background: blue;
+    color: white;
+    padding:12px;
+}
+        .btn-3 {
+    padding: 10px 10px 10px 10px;
+    background-color: aqua;
+    border: none;
+    border-radius: 100px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-3:hover {
+    background: blue;
+    color: white;
+    padding:12px ;
+}
+.btn {
+    display: flex;
+    margin: 100px 0 0 0;
+}
+    </style>
+</head>
+<body>
+    <div class="main-1">
+        <h1>Slide Toggle / SlideUp / SlideDown</h1>
+    </div>
+    <div class="main-2">
+        <h1>Hello Guys</h1>
+    </div>
+    <div class="btn">
+        <button class="btn-1">Slide-Down</button>
+        <button class="btn-2">Slide-Up</button>
+        <button class="btn-3">Slide-Toggle</button>    
+    </div>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+$(document).ready(function(){
+    $(".btn-1").click(function(){
+        $(".main-2").slideDown(2000)
+    });
+    $(".btn-2").click(function(){
+        $(".main-2").slideUp(2000)
+    });
+    $(".btn-3").click(function(){
+        $(".main-2").slideToggle(2000)
+    })
+})
+
+
+    </script>
+</body>
+</html>
+
